@@ -1,4 +1,4 @@
-import { JSX } from 'react';
+import React, { JSX } from 'react';
 import './styles/style.css';
 import Logo from '../../assets/images/Union.svg';
 

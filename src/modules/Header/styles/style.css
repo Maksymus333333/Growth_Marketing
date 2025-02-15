@@ -1,15 +1,13 @@
 .header-wrapper {
-    height: 48px;
-    width: 100%;
-    padding-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
+  width: 100%;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
 }
-.logo_navigation{
-    display: flex;
-    gap: 64px;
-    align-items: center;
+.logo_navigation {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+  height: 48px;
 }
-   
-

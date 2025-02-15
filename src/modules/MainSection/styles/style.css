@@ -1,10 +1,14 @@
-.section-wrapper {
-    display: flex;
-    align-items: center;
-    padding: 130px 160px 0px 160px;
-    justify-content: center;
-    gap: 24px;
-    flex-direction: column;
+.main-section-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 130px 160px 0px 160px;
+  justify-content: center;
+  
 }
-
-
+.main-section-container{
+  display: flex;
+  padding: 181px 58px 216px 58px;
+  justify-content: center;
+  gap: 32px;
+  flex-direction: column;
+}

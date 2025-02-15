@@ -1,9 +1,11 @@
 .login {
-    margin: 32px 470px 0px 470px;
+  display: flex;
+  justify-content: center;
 }
 .login-button {
-    width: 364px;
-    background-color: #0D0D0D;
-    font-size: 20px;
-    color: #FFFFFF;
+  width: 364px;
+  background-color: #0d0d0d;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 18px 0px;
 }

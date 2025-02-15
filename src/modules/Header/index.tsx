@@ -1,6 +1,8 @@
 import { JSX } from "react";
-import "./styles/style.css"
+import "../Header/styles/style.css"
 import Logo from "../../assets/images/Union.svg"
+import { NavBar } from "./features/NavBar";
+import { SignUp } from "./features/SignUp";
 
 export const Header = (): JSX.Element => {
     return (
@@ -9,22 +11,9 @@ export const Header = (): JSX.Element => {
         <div className="logo">
            <img src={Logo}/>
         </div>
-        <nav>
-            <ul className="navbar">
-                <li>Про курс</li>
-                <li>Ментор</li>
-                <li>Контакти</li>
-                <li>Програма</li>
-            </ul>
-        </nav>
+        <NavBar/>
      </div>
-     <div className="sign_up">
-        <button className="sign_up_button">
-            <p className="sign_up_text">Записатися</p>
-        </button>
-     </div>
-
-
+     <SignUp/>
      </header>
     );
   };

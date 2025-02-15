@@ -1,0 +1,40 @@
+.interests-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 130px 160px 0;
+}
+
+.interests-title {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.interests-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.interests-item {
+  display: flex;
+  flex-direction: column;
+  width: 452px;
+  gap: 18px;
+}
+
+.interests-icon {
+  height: 100px;
+}
+
+.interests-item img {
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.interests-item p {
+  width: 88%;
+  font-size: 20px;
+  line-height: 28px;
+}

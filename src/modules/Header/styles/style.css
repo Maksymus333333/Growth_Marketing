@@ -1,13 +1,18 @@
 .header-wrapper {
-  height: 48px;
   width: 100%;
   padding-top: 40px;
   display: flex;
   justify-content: space-between;
   font-size: 20px;
 }
+
+.logo {
+  height: 48px;
+}
+
 .logo_navigation {
   display: flex;
+  height: 48px;
   gap: 56px;
   align-items: center;
 }
@@ -16,19 +21,23 @@
   display: flex;
   list-style: none;
   gap: 56px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
 }
+
 .sign_up {
   display: flex;
 }
+
 .sign_up_button {
   width: 185px;
   height: 52px;
   border-radius: 20px;
-  border-width: 1px;
-  border-color: #0d0d0d;
+  border: 1px solid #0d0d0d;
   background: none;
-  padding: 12px 32px 12px 32px;
+  padding: 12px 32px;
 }
+
 .sign_up_text {
   font-size: 20px;
   margin: 0;

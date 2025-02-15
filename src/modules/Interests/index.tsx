@@ -69,19 +69,21 @@ export const Interests = () => {
 
   return (
     <section className="interests-wrapper">
-      <h2 className="interests-title">Якщо ти:</h2>
-      {chunkedInterests.map((chunk, index) => (
-        <div key={index} className="interests-columns">
-          {chunk.map((item, i) => (
-            <InterestItem
-              key={i}
-              iconSrc={item.iconSrc}
-              backgroundColor={item.backgroundColor}
-              description={item.description}
-            />
-          ))}
-        </div>
-      ))}
+      <div className="interests-container">
+        <h2 className="interests-title">Якщо ти:</h2>
+        {chunkedInterests.map((chunk, index) => (
+          <div key={index} className="interests-columns">
+            {chunk.map((item, i) => (
+              <InterestItem
+                key={i}
+                iconSrc={item.iconSrc}
+                backgroundColor={item.backgroundColor}
+                description={item.description}
+              />
+            ))}
+          </div>
+        ))}
+      </div>
     </section>
   );
 };

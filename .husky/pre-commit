@@ -1,5 +1,5 @@
 #!/bin/sh
 
-pnpm lint && pnpm format
+pnpm eslint && pnpm format
 
 

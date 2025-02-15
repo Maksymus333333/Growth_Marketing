@@ -1,3 +1,5 @@
-#!/usr/bin/env sh 
+#!/bin/sh
 
-npx lint-staged  && npm run format
+pnpm lint && pnpm format
+
+

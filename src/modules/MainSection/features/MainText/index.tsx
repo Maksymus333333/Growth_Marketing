@@ -3,7 +3,7 @@ import "../MainText/styles/style.css"
 
 export const MainText = (): JSX.Element => {
     return (
-<div className="main-text">
+<div className="main-text-wrapper">
             <h1> Шукаю початківців для менторства у сфері
                 <p className="second-h1">Growth Marketing Associate</p>
             </h1>

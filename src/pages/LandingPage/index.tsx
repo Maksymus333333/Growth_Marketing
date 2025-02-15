@@ -1,9 +1,15 @@
-import { JSX } from "react"
-import { Header } from "../../modules/Header"
-import { MainSection } from "../../modules/MainSection"
+import React from 'react';
+
+import { JSX } from 'react';
+import { Header } from '../../modules/Header';
+import { Interests } from '../../modules/Interests';
+import './styles/styles.css';
 
 export const LandingPage = (): JSX.Element => {
-    return (
-        <><Header /><MainSection /></>
-    )
-}
+  return (
+    <div className="landing-page-wrapper">
+      <Header />
+      <Interests />;
+    </div>
+  );
+};

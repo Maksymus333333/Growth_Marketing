@@ -3,13 +3,17 @@ import { JSX } from 'react';
 import './styles/style.css';
 import { useNavigate } from 'react-router-dom';
 
-export const LogInButton = (): JSX.Element => {
+interface StyleButtonLogin {
+  style?: React.CSSProperties;
+}
+
+export const LogInButton = ({ style }: StyleButtonLogin): JSX.Element => {
   const navigate = useNavigate();
   const handleClick = () => {
     navigate('/thanks');
   };
   return (
-    <button className="login-button" onClick={handleClick}>
+    <button className="login-button" onClick={handleClick} style={style}>
       <p>Записатися</p>
     </button>
   );

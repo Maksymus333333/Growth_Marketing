@@ -5,40 +5,9 @@
   justify-content: space-between;
   font-size: 20px;
 }
-
-.logo {
-  height: 48px;
-}
-
 .logo_navigation {
   display: flex;
-  height: 48px;
-  gap: 56px;
+  gap: 64px;
   align-items: center;
-}
-
-.navbar {
-  display: flex;
-  list-style: none;
-  gap: 56px;
-  letter-spacing: 0.02em;
-  cursor: pointer;
-}
-
-.sign_up {
-  display: flex;
-}
-
-.sign_up_button {
-  width: 185px;
-  height: 52px;
-  border-radius: 20px;
-  border: 1px solid #0d0d0d;
-  background: none;
-  padding: 12px 32px;
-}
-
-.sign_up_text {
-  font-size: 20px;
-  margin: 0;
+  height: 48px;
 }

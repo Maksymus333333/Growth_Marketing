@@ -21,23 +21,23 @@ export const Proposition = (): JSX.Element => {
 
         <div className="proposition-list">
           <div className="list-items">
-            <img src={ListItem1} />
+            <img src={ListItem1} alt="Number 1" />
             <p>Персоналізовану навчальну програму, адаптовану під твій рівень.</p>
           </div>
           <div className="list-items">
-            <img src={ListItem2} />
+            <img src={ListItem2} alt="Number 2" />
             <p>Регулярні менторські сесії для розбору складних тем і підтримки.</p>
           </div>
           <div className="list-items">
-            <img src={ListItem3} />
+            <img src={ListItem3} alt="Number 3" />
             <p>Практичні завдання, які підготують до реальної роботи.</p>
           </div>
           <div className="list-items">
-            <img src={ListItem4} />
+            <img src={ListItem4} alt="Number 4" />
             <p>Допомогу в створенні портфоліо та розвитку професійних навичок.</p>
           </div>
           <div className="list-items">
-            <img src={ListItem5} />
+            <img src={ListItem5} alt="Number 5" />
             <p>
               Сприяння в працевлаштуванні на прямі контракти в закордонні компанії з місячною зарплатою від $4,000 до
               $6,500.

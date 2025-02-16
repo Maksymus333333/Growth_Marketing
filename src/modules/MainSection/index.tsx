@@ -7,11 +7,10 @@ import { MainText } from './features/MainText';
 export const MainSection = (): JSX.Element => {
   return (
     <section className="main-section-wrapper">
-      <div className='main-section-container'>
-      <MainText/>
-      <LogIn/>
+      <div className="main-section-container">
+        <MainText />
+        <LogIn />
       </div>
-      
     </section>
   );
-}; 
+};

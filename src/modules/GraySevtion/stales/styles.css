@@ -1,0 +1,32 @@
+.gray-section-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 506px;
+  background: url('../../../assets/images/graybackground.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 130px;
+}
+
+.gray-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gray-section-title {
+  width: 844px;
+  height: 160px;
+  font-size: 32px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+}
+
+.gray-weight-text {
+  color: #fa6f35;
+  margin: 0;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { JSX } from 'react';
 import '../Header/styles/style.css';
-import Logo from '../../assets/images/Union.svg';
+import Logo from '../../assets/icons/Union.svg';
 import { NavBar } from './features/NavBar';
 import { SignUp } from './features/SignUp';
 

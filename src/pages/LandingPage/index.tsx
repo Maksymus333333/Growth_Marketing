@@ -8,6 +8,8 @@ import { MainSection } from '../../modules/MainSection';
 import { Proposition } from '../../modules/Proposition';
 
 import { GraySection } from '../../modules/GraySevtion';
+import { ConditionsSection } from '../../modules/Conditions';
+import { Application } from '../../modules/Application';
 
 export const LandingPage = (): JSX.Element => {
   return (
@@ -21,6 +23,8 @@ export const LandingPage = (): JSX.Element => {
         <GraySection />
       </div>
       <Proposition />
+      <ConditionsSection />
+      <Application />
     </div>
   );
 };

@@ -12,21 +12,37 @@
 .daria-pimkina {
   padding: 53px 79px 0px 79px;
 }
-
-.proposition-text {
-  font-size: 40px;
-  padding-bottom: 48px;
+.right-side {
+  display: flex;
+  flex-direction: column;
 }
-.proposition-list {
+.list-button-container {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.list-items {
+
+.proposition-text {
+  font-size: 40px;
+  font-weight: 900;
+  padding-bottom: 48px;
+}
+
+.proposition-list ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.list-item {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-.list-items p {
+
+.list-item p {
   font-size: 20px;
 }

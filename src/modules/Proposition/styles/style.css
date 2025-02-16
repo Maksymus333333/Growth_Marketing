@@ -1,37 +1,33 @@
 .proposition-section-wrapper {
-display: flex;
-gap: 32px;
-padding: 130px 160px;
-justify-content: center;
-align-items: center;
-flex-grow: 1;
+  display: flex;
+  gap: 32px;
+  padding: 130px 160px;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 .left-side {
-    display: flex;
-    height: 712px;
-    
-
+  display: flex;
+  height: 712px;
 }
 .daria-pimkina {
-    padding: 53px 79px 0px 79px
+  padding: 53px 79px 0px 79px;
 }
 
 .proposition-text {
-    font-size: 40px;
-    padding-bottom: 48px;
+  font-size: 40px;
+  padding-bottom: 48px;
 }
 .proposition-list {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .list-items {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 .list-items p {
-    font-size: 20px;
+  font-size: 20px;
 }
-
-

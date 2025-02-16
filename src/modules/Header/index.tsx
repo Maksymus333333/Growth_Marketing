@@ -10,7 +10,7 @@ export const Header = (): JSX.Element => {
     <header className="header-wrapper">
       <div className="logo_navigation">
         <div className="logo">
-          <img src={Logo} alt='Logo icon'/>
+          <img src={Logo} alt="Logo icon" />
         </div>
         <NavBar />
       </div>

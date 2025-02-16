@@ -1,10 +1,15 @@
 import React from 'react';
 import { LandingPage } from './pages/LandingPage';
+import { BrowserRouter } from 'react-router-dom';
+import { CookieConsent } from './modules/CookieConsent';
 function App() {
   return (
-    <div className="App">
-      <LandingPage />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <CookieConsent />
+        <LandingPage />
+      </div>
+    </BrowserRouter>
   );
 }
 

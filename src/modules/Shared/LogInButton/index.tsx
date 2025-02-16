@@ -4,8 +4,8 @@ import './styles/style.css';
 
 export const LogIn = (): JSX.Element => {
   return (
-      <button className="login-button">
-        <p>Записатися</p>
-      </button>
+    <button className="login-button">
+      <p>Записатися</p>
+    </button>
   );
 };

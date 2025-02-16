@@ -10,6 +10,7 @@ h1 {
 .bottom-text {
   font-size: 20px;
   padding-top: 24px;
-  margin: 0px 310px 0px 310px;
+  display: flex;
+  justify-content: center;
   text-align: center;
 }

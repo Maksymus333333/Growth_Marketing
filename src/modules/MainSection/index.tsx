@@ -1,7 +1,7 @@
 import React from 'react';
 import { JSX } from 'react';
 import '../MainSection/styles/style.css';
-import { LogIn } from '../Shared/LogInButton';
+import { LogInButton } from '../Shared/LogInButton';
 import { MainText } from './features/MainText';
 
 export const MainSection = (): JSX.Element => {
@@ -10,7 +10,7 @@ export const MainSection = (): JSX.Element => {
       <div className="main-section-container">
         <MainText />
         <div className="login">
-          <LogIn />
+          <LogInButton />
         </div>
       </div>
     </section>

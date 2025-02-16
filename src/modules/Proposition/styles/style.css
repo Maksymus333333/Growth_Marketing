@@ -4,7 +4,6 @@
   padding: 130px 160px;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
 }
 .left-side {
   display: flex;

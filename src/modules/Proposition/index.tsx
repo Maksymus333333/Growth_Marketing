@@ -7,7 +7,7 @@ import ListItem2 from '../../assets/icons/list-2.svg';
 import ListItem3 from '../../assets/icons/list-3.svg';
 import ListItem4 from '../../assets/icons/list-4.svg';
 import ListItem5 from '../../assets/icons/list-5.svg';
-import { LogIn } from '../Shared/LogInButton';
+import { LogInButton } from '../Shared/LogInButton';
 
 export const Proposition = (): JSX.Element => {
   return (
@@ -43,7 +43,7 @@ export const Proposition = (): JSX.Element => {
               $6,500.
             </p>
           </div>
-          <LogIn />
+          <LogInButton />
         </div>
       </div>
     </section>

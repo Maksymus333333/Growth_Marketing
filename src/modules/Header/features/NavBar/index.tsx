@@ -13,19 +13,19 @@ export const NavBar = (): JSX.Element => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/mentor" className={({ isActive }) => (isActive ? 'active' : '')}>
-            Ментор
-          </NavLink>
+          {/* <NavLink to="/mentor" className={({ isActive }) => (isActive ? 'active' : '')}> */}
+          Ментор
+          {/* </NavLink> */}
         </li>
         <li>
-          <NavLink to="/contacts" className={({ isActive }) => (isActive ? 'active' : '')}>
-            Контакти
-          </NavLink>
+          {/* <NavLink to="/contacts" className={({ isActive }) => (isActive ? 'active' : '')}> */}
+          Контакти
+          {/* </NavLink> */}
         </li>
         <li>
-          <NavLink to="/program" className={({ isActive }) => (isActive ? 'active' : '')}>
-            Програма
-          </NavLink>
+          {/* <NavLink to="/program" className={({ isActive }) => (isActive ? 'active' : '')}> */}
+          Програма
+          {/* </NavLink> */}
         </li>
       </ul>
     </nav>

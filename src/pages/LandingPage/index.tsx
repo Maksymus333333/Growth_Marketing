@@ -11,7 +11,9 @@ export const LandingPage = (): JSX.Element => {
   return (
     <div className="landing-page-wrapper">
       <Header />
-      <MainSection />
+      <div className="full-width">
+        <MainSection />
+      </div>
       <Interests />
       <div className="full-width">
         <GraySection />

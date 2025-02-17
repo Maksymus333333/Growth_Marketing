@@ -4,8 +4,8 @@
 }
 
 .full-width {
-  padding-top: 130px;
+  width: calc(100% + 180px);
   margin-left: -90px;
   margin-right: -90px;
-  width: calc(100% + 180px);
+  padding-top: 130px;
 }

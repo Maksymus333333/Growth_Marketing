@@ -6,7 +6,7 @@ import './styles/styles.css';
 import { MainSection } from '../../modules/MainSection';
 import { Proposition } from '../../modules/Proposition';
 
-import { GraySection } from '../../modules/GraySevtion';
+import { GraySection } from '../../modules/GraySection';
 import { ConditionsSection } from '../../modules/Conditions';
 import { Application } from '../../modules/Application';
 

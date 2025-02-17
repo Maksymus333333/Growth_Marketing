@@ -2,11 +2,12 @@
   display: flex;
   justify-content: center;
 }
+
 .login-button {
   width: 364px;
   height: 64px;
   background-color: #0d0d0d;
   font-size: 20px;
-  color: #ffffff;
-  padding: 18px 0px;
+  color: #fff;
+  padding: 18px 0;
 }

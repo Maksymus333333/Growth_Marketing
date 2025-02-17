@@ -1,14 +1,16 @@
 .sign_up {
   display: flex;
 }
+
 .sign_up_button {
   width: 185px;
   height: 52px;
-  border-radius: 20px;
+  padding: 12px 32px;
   border: 1px solid #0d0d0d;
-  padding: 12px 32px 12px 32px;
+  border-radius: 20px;
 }
+
 .sign_up_text {
-  font-size: 20px;
   margin: 0;
+  font-size: 20px;
 }

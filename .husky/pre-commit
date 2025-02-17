@@ -1,5 +1,4 @@
 #!/bin/sh
 
-pnpm eslint && pnpm format
-
+npm run format && npm run lint
 

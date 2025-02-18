@@ -5,17 +5,21 @@
   justify-content: center;
   align-items: center;
 }
+
 .left-side {
   display: flex;
   height: 712px;
 }
+
 .daria-pimkina {
-  padding: 53px 79px 0px 79px;
+  padding: 53px 79px 0;
 }
+
 .right-side {
   display: flex;
   flex-direction: column;
 }
+
 .list-button-container {
   display: flex;
   flex-direction: column;

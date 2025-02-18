@@ -1,10 +1,12 @@
 .header-wrapper {
   width: 100%;
+  padding: 0 90px;
   padding-top: 40px;
   display: flex;
   justify-content: space-between;
   font-size: 20px;
 }
+
 .logo_navigation {
   display: flex;
   gap: 64px;

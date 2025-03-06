@@ -1,52 +1,50 @@
 .footer-section-wrapper {
-    padding: 130px 90px 40px 90px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 24px;
+  padding: 130px 90px 40px 90px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.footer-links, 
-.footer-info-container, 
-.footer-info-contact, 
+.footer-links,
+.footer-info-container,
+.footer-info-contact,
 .footer-icon-text {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-links {
-    gap: 40px;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.32px;
+  gap: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
 }
 
 .footer-info-container {
-    justify-content: space-between;
-    font-size: 14px;
-    font-weight: 400;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .footer-info-contact {
-    gap: 40px;
+  gap: 40px;
 }
 
 .footer-icon-text {
-    flex-direction: row;
-    gap: 8px;
-    letter-spacing: 0.32px;
+  flex-direction: row;
+  gap: 8px;
+  letter-spacing: 0.32px;
 }
-.footer-text, 
+.footer-text,
 .footer-admin-number {
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.32px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
 }
 
 .footer-info-copirate {
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.32px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.32px;
 }
-
-

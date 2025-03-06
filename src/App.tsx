@@ -11,7 +11,7 @@ function App() {
         <CookieConsent />
         <Header />
         <AppRoutes />
-        <Footer/>
+        <Footer />
       </div>
     </BrowserRouter>
   );

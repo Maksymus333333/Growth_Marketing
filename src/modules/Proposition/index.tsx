@@ -23,10 +23,7 @@ const listItems = [
 export const Proposition = (): JSX.Element => {
   return (
     <section className="proposition-section-wrapper">
-      <div className="left-side">
         <img src={DariaPimkina} className="daria-pimkina" alt="Daria Pimkina" />
-      </div>
-
       <div className="right-side">
         <h2 className="proposition-text">Що я пропоную?</h2>
         <div className="list-button-container">

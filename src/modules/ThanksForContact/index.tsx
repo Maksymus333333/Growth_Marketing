@@ -3,9 +3,6 @@ import './styles/styles.css';
 import ChatBubbles from '../../assets/icons/chat-two-bubbles.svg';
 import LinkedInIcon from '../../assets/icons/linkedin-icon.svg';
 import TelegramIcon from '../../assets/icons/icons_telegram.svg';
-import FacebookIcon from '../../assets/icons/facebook-icon.svg';
-import InstagramIcon from '../../assets/icons/instagram-iocn.svg';
-import TikTokIcon from '../../assets/icons/tik-tok.svg';
 import { BackToHome } from './features/BackToMain';
 
 const socialLinks = [
@@ -14,9 +11,6 @@ const socialLinks = [
     icon: TelegramIcon,
     text: ['IT - Паросток - Волонтери', 'Заходи ІТ-Паросток'],
   },
-  { icon: FacebookIcon, text: 'Facebook' },
-  { icon: InstagramIcon, text: 'Instagram' },
-  { icon: TikTokIcon, text: 'TikTok' },
 ];
 
 export const ThanksForContact = () => {

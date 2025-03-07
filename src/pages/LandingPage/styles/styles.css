@@ -10,7 +10,6 @@
   padding-top: 130px;
 }
 
-
 @media screen and (width <= 1024px) {
   .landing-page-wrapper {
     padding: 0 64px;
@@ -23,4 +22,3 @@
     padding-top: 130px;
   }
 }
- 

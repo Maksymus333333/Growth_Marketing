@@ -37,8 +37,8 @@ export const Proposition = (): JSX.Element => {
               ))}
             </ul>
           </div>
-          <div className='proposition-button-container'>
-          <LogInButton />
+          <div className="proposition-button-container">
+            <LogInButton />
           </div>
         </div>
       </div>

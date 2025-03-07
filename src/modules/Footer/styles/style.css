@@ -49,7 +49,6 @@
   letter-spacing: 0.32px;
 }
 
-
 @media screen and (width <= 1024px) {
   .footer-section-wrapper {
     justify-content: space-between;

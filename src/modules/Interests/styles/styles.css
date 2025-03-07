@@ -2,14 +2,14 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 130px 160px 0;
+  padding: 130px 0 0;
 }
 
 .interests-container {
   display: flex;
   width: 100%;
   flex-direction: column;
-  gap: 40px;
+  gap: 48px;
 }
 
 .interests-title {
@@ -24,13 +24,64 @@
   gap: 32px;
 }
 
+.interests-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 .interests-item img {
-  border-radius: 20px;
-  padding: 20px;
+  width: 80px;
+  height: 80px;
 }
 
 .interests-item p {
+  width: 100%;
   font-size: 20px;
   line-height: 28px;
-  width: 95%;
+}
+
+.interests-grid {
+  display: grid;
+  width: 100%;
+  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+@media screen and (width <= 1024px) {
+  .interests-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .interests-grid > :last-child:nth-child(2n + 1) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .interests-item {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.interests-grid > :last-child:nth-child(3n + 1) {
+  grid-column: 2 / 3;
+}
+@media (width <= 820px) {
+  .interests-title {
+    font-size: 26px;
+  }
+  .interests-item p {
+    font-size: 18px;
+  }
+}
+
+@media (width <= 768px) {
+  .interests-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

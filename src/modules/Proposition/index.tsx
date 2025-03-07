@@ -23,7 +23,7 @@ const listItems = [
 export const Proposition = (): JSX.Element => {
   return (
     <section className="proposition-section-wrapper">
-        <img src={DariaPimkina} className="daria-pimkina" alt="Daria Pimkina" />
+      <img src={DariaPimkina} className="daria-pimkina" alt="Daria Pimkina" />
       <div className="right-side">
         <h2 className="proposition-text">Що я пропоную?</h2>
         <div className="list-button-container">
@@ -37,7 +37,9 @@ export const Proposition = (): JSX.Element => {
               ))}
             </ul>
           </div>
+          <div className='proposition-button-container'>
           <LogInButton />
+          </div>
         </div>
       </div>
     </section>

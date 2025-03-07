@@ -15,3 +15,9 @@
   gap: 32px;
   flex-direction: column;
 }
+
+@media (max-width: 1024px) {
+  .main-section-container {
+    padding: 121px 29px 156px;
+  }
+}

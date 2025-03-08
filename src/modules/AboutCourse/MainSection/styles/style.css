@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('../../../assets/images/main-background.svg');
+  background: url('../../../../assets/images/main-background.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -14,4 +14,10 @@
   justify-content: center;
   gap: 32px;
   flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .main-section-container {
+    padding: 121px 29px 156px;
+  }
 }

@@ -1,13 +1,13 @@
 import React from 'react';
-import AiEditSpark from '../../assets/icons/AiEditSpark.svg';
-import BrowthAdd from '../../assets/icons/browser-add--app-code.svg';
-import HandHeld from '../../assets/icons/hand-held-tablet-drawing.svg';
-import GoogleMedia from '../../assets/icons/google--media.svg';
-import WebcamVideo from '../../assets/icons/webcam-video.svg';
-import SendEmail from '../../assets/icons/send-email.svg';
-import StartBadge from '../../assets/icons/star-badge.svg';
-import BrowserWebsite from '../../assets/icons/browser-website.svg';
-import GraduationCap from '../../assets/icons/graduation-cap.svg';
+import AiEditSpark from '../../../assets/icons/AiEditSpark.svg';
+import BrowthAdd from '../../../assets/icons/browser-add--app-code.svg';
+import HandHeld from '../../../assets/icons/hand-held-tablet-drawing.svg';
+import GoogleMedia from '../../../assets/icons/google--media.svg';
+import WebcamVideo from '../../../assets/icons/webcam-video.svg';
+import SendEmail from '../../../assets/icons/send-email.svg';
+import StartBadge from '../../../assets/icons/star-badge.svg';
+import BrowserWebsite from '../../../assets/icons/browser-website.svg';
+import GraduationCap from '../../../assets/icons/graduation-cap.svg';
 
 import './styles/styles.css';
 import { InterestItem } from './feature/InterestItem';
@@ -61,28 +61,15 @@ const interestsData = [
 ];
 
 export const Interests = () => {
-  const chunkedInterests = [];
-  const chunkSize = 3;
-  for (let i = 0; i < interestsData.length; i += chunkSize) {
-    chunkedInterests.push(interestsData.slice(i, i + chunkSize));
-  }
-
   return (
     <section className="interests-wrapper">
       <div className="interests-container">
         <h2 className="interests-title">Якщо ти:</h2>
-        {chunkedInterests.map((chunk, index) => (
-          <div key={index} className="interests-columns">
-            {chunk.map((item, i) => (
-              <InterestItem
-                key={i}
-                iconSrc={item.iconSrc}
-                backgroundColor={item.backgroundColor}
-                description={item.description}
-              />
-            ))}
-          </div>
-        ))}
+        <div className="interests-grid">
+          {interestsData.map((item, i) => (
+            <InterestItem key={i} iconSrc={item.iconSrc} description={item.description} backgroundColor={''} />
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -9,3 +9,16 @@
   margin-right: -90px;
   padding-top: 130px;
 }
+
+@media screen and (width <= 1024px) {
+  .landing-page-wrapper {
+    padding: 0 64px;
+  }
+
+  .full-width {
+    width: calc(100% + 128px);
+    margin-left: -64px;
+    margin-right: -64px;
+    padding-top: 130px;
+  }
+}

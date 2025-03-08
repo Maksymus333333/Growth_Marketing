@@ -1,13 +1,13 @@
 import React from 'react';
 import { JSX } from 'react';
 import '../Proposition/styles/style.css';
-import DariaPimkina from '../../assets/images/daria-pimkina.svg';
-import ListItem1 from '../../assets/icons/list-1.svg';
-import ListItem2 from '../../assets/icons/list-2.svg';
-import ListItem3 from '../../assets/icons/list-3.svg';
-import ListItem4 from '../../assets/icons/list-4.svg';
-import ListItem5 from '../../assets/icons/list-5.svg';
-import { LogInButton } from '../Shared/LogInButton';
+import DariaPimkina from '../../../assets/images/daria-pimkina.svg';
+import ListItem1 from '../../../assets/icons/list-1.svg';
+import ListItem2 from '../../../assets/icons/list-2.svg';
+import ListItem3 from '../../../assets/icons/list-3.svg';
+import ListItem4 from '../../../assets/icons/list-4.svg';
+import ListItem5 from '../../../assets/icons/list-5.svg';
+import { LogInButton } from '../../Shared/LogInButton';
 
 const listItems = [
   { img: ListItem1, text: 'Персоналізовану навчальну програму, адаптовану під твій рівень.' },
@@ -23,7 +23,7 @@ const listItems = [
 export const Proposition = (): JSX.Element => {
   return (
     <section className="proposition-section-wrapper">
-        <img src={DariaPimkina} className="daria-pimkina" alt="Daria Pimkina" />
+      <img src={DariaPimkina} className="daria-pimkina" alt="Daria Pimkina" />
       <div className="right-side">
         <h2 className="proposition-text">Що я пропоную?</h2>
         <div className="list-button-container">
@@ -37,7 +37,9 @@ export const Proposition = (): JSX.Element => {
               ))}
             </ul>
           </div>
-          <LogInButton />
+          <div className="proposition-button-container">
+            <LogInButton />
+          </div>
         </div>
       </div>
     </section>

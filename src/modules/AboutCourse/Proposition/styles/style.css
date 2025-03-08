@@ -46,3 +46,29 @@
 .list-item p {
   font-size: 20px;
 }
+
+@media screen and (width <= 1024px) {
+  .proposition-section-wrapper {
+    flex-direction: column;
+    padding: 130px 0;
+  }
+  .proposition-button-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 820px) {
+  .proposition-text {
+    font-size: 26px;
+  }
+  .list-item p {
+    font-size: 18px;
+  }
+  .daria-pimkina {
+    height: 400px;
+  }
+  .proposition-section-wrapper {
+    padding-top: 30px;
+  }
+}

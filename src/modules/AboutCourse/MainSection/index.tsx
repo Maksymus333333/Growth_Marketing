@@ -1,7 +1,7 @@
 import React from 'react';
 import { JSX } from 'react';
-import '../MainSection/styles/style.css';
-import { LogInButton } from '../Shared/LogInButton';
+import './styles/style.css';
+import { LogInButton } from '../../Shared/LogInButton';
 import { MainText } from './features/MainText';
 
 export const MainSection = (): JSX.Element => {

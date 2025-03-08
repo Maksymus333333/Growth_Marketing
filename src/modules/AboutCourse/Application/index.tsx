@@ -1,7 +1,7 @@
 import React from 'react';
 import { JSX } from 'react';
 import './styles/style.css';
-import { LogInButton } from '../Shared/LogInButton';
+import { LogInButton } from '../../Shared/LogInButton';
 
 export const Application = (): JSX.Element => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import { JSX } from 'react';
-import '../MainText/styles/style.css';
+import './styles/style.css';
 
 export const MainText = (): JSX.Element => {
   return (

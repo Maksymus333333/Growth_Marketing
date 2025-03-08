@@ -1,13 +1,13 @@
 import React from 'react';
-import AiEditSpark from '../../assets/icons/AiEditSpark.svg';
-import BrowthAdd from '../../assets/icons/browser-add--app-code.svg';
-import HandHeld from '../../assets/icons/hand-held-tablet-drawing.svg';
-import GoogleMedia from '../../assets/icons/google--media.svg';
-import WebcamVideo from '../../assets/icons/webcam-video.svg';
-import SendEmail from '../../assets/icons/send-email.svg';
-import StartBadge from '../../assets/icons/star-badge.svg';
-import BrowserWebsite from '../../assets/icons/browser-website.svg';
-import GraduationCap from '../../assets/icons/graduation-cap.svg';
+import AiEditSpark from '../../../assets/icons/AiEditSpark.svg';
+import BrowthAdd from '../../../assets/icons/browser-add--app-code.svg';
+import HandHeld from '../../../assets/icons/hand-held-tablet-drawing.svg';
+import GoogleMedia from '../../../assets/icons/google--media.svg';
+import WebcamVideo from '../../../assets/icons/webcam-video.svg';
+import SendEmail from '../../../assets/icons/send-email.svg';
+import StartBadge from '../../../assets/icons/star-badge.svg';
+import BrowserWebsite from '../../../assets/icons/browser-website.svg';
+import GraduationCap from '../../../assets/icons/graduation-cap.svg';
 
 import './styles/styles.css';
 import { InterestItem } from './feature/InterestItem';

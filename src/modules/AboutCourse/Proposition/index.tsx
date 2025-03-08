@@ -1,13 +1,13 @@
 import React from 'react';
 import { JSX } from 'react';
 import '../Proposition/styles/style.css';
-import DariaPimkina from '../../assets/images/daria-pimkina.svg';
-import ListItem1 from '../../assets/icons/list-1.svg';
-import ListItem2 from '../../assets/icons/list-2.svg';
-import ListItem3 from '../../assets/icons/list-3.svg';
-import ListItem4 from '../../assets/icons/list-4.svg';
-import ListItem5 from '../../assets/icons/list-5.svg';
-import { LogInButton } from '../Shared/LogInButton';
+import DariaPimkina from '../../../assets/images/daria-pimkina.svg';
+import ListItem1 from '../../../assets/icons/list-1.svg';
+import ListItem2 from '../../../assets/icons/list-2.svg';
+import ListItem3 from '../../../assets/icons/list-3.svg';
+import ListItem4 from '../../../assets/icons/list-4.svg';
+import ListItem5 from '../../../assets/icons/list-5.svg';
+import { LogInButton } from '../../Shared/LogInButton';
 
 const listItems = [
   { img: ListItem1, text: 'Персоналізовану навчальну програму, адаптовану під твій рівень.' },

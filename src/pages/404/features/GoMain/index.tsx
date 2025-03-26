@@ -14,8 +14,7 @@ export const GoMain404 = ({ style }: StyleGoMain404): JSX.Element => {
   };
   return (
     <button className="go-main-button" onClick={handleClick} style={style}>
-    <p className="go-main-text">Повернутися на Головну</p>
-  </button>
+      <p className="go-main-text">Повернутися на Головну</p>
+    </button>
   );
 };
-

@@ -1,5 +1,5 @@
 .footer-section-wrapper {
-  padding: 130px 90px 40px 90px;
+  padding: 0px 90px 40px 90px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -52,7 +52,7 @@
 @media screen and (width <= 1024px) {
   .footer-section-wrapper {
     justify-content: space-between;
-    padding: 130px 44px 40px;
+    padding: 0px 44px 40px;
     flex-direction: row;
     gap: 0;
   }
@@ -96,6 +96,6 @@
 
 @media screen and (width <= 768px) {
   .footer-section-wrapper {
-    padding: 130px 24px 40px;
+    padding: 0px 24px 40px;
   }
 }

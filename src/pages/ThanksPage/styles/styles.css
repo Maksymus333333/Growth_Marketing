@@ -3,8 +3,6 @@
   padding: 0 90px;
 }
 
-
-
 @media (width <= 768px) {
   .thanks-page-wrapper {
     padding: 0 15px;

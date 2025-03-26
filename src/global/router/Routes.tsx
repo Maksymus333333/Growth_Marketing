@@ -12,7 +12,7 @@ export const AppRoutes = () => {
       <Route path="/contacts" element={<Contacts />} />
       <Route path="/program" element={<Program />} /> */}
       <Route path="/thanks" element={<ThanksPage />} />
-      <Route path="*" element={<Page404/>} />
+      <Route path="*" element={<Page404 />} />
     </Routes>
   );
 };

@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import ReactGA from 'react-ga4';
-import CookiesIcon from '../../assets/images/cookies.svg';
 import './styles/styles.css';
 
 const COOKIE_KEY = 'cookiesAccepted';
@@ -40,7 +39,6 @@ export const CookieConsent = () => {
 
   return isVisible ? (
     <div className="cookie-consent-wrapper">
-      <img src={CookiesIcon} alt="Cookies ico" />
       <div className="cookie-message">
         <div className="cookie-text">
           <h2 className="cookie-main-title">Ми використовуємо файли cookies</h2>
@@ -56,7 +54,7 @@ export const CookieConsent = () => {
           <button className="cookie-buttons-cancel" onClick={handleReject}>
             Відхилити
           </button>
-          <button className="cookie-buttons-cancel">Налаштувати</button>
+          <button className="cookie-buttons-settings">Налаштувати</button>
         </div>
       </div>
     </div>

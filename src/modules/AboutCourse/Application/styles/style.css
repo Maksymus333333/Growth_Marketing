@@ -45,12 +45,13 @@
 @media (max-width: 1024px) {
   .application-section-wrappper {
     padding: 0;
+    padding-bottom: 130px;
   }
 }
 
 @media (max-width: 820px) {
   .application-section-wrappper {
-    padding: 0;
+    padding-bottom: 130px;
   }
   .application-section-container {
     height: 300px;

@@ -18,7 +18,12 @@ export const Application = (): JSX.Element => {
           </div>
         </div>
         <div>
-          <LogInButton style={{ width: '185px', height: '60px' }} />
+          <LogInButton
+            style={{
+              width: '185px',
+              height: '60px',
+            }}
+          />
         </div>
       </div>
     </section>

@@ -17,6 +17,16 @@
   .login-button {
     font-size: 18px;
     font-weight: 700;
+  }
+}
+@media (max-width: 720px) {
+  .login-button {
     width: 50%;
   }
 }
+
+/* @media (max-width: 480px) {
+  .login-button {
+    width: 100%;
+  }
+} */

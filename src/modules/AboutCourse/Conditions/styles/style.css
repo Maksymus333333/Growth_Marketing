@@ -1,8 +1,13 @@
+.condition-full-width {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .conditions-section-wrapper {
-  padding: 0 160px 130px;
+  padding: 0 0px 130px;
   display: flex;
   justify-content: space-between;
-  gap: 585px;
+  width: 100%;
 }
 
 .h2-conditions-text {
@@ -11,10 +16,10 @@
 }
 
 .conditions-list {
-  padding-right: 100px;
   display: flex;
   flex-direction: column;
   gap: 40px;
+  width: 593px;
 }
 
 .list-points {
@@ -53,17 +58,6 @@
   color: rgb(250 111 53 / 100%);
 }
 
-@media (max-width: 1440px) {
-  .conditions-section-wrapper {
-    gap: 400px;
-    padding: 0 90px 130px;
-  }
-
-  .conditions-list {
-    padding-right: 0;
-  }
-}
-
 @media (max-width: 1024px) {
   .conditions-section-wrapper {
     gap: 280px;
@@ -90,6 +84,9 @@
     flex-direction: column;
     gap: 40px;
     justify-content: center;
-    padding: 0px 24px 40px;
+    padding: 0px 0px 40px;
+  }
+  .conditions-list {
+    width: 100%;
   }
 }

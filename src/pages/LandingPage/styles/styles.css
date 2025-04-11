@@ -22,3 +22,14 @@
     padding-top: 130px;
   }
 }
+
+@media screen and (width <= 480px) {
+  .full-width {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .landing-page-wrapper {
+    padding: 0 20px;
+  }
+}

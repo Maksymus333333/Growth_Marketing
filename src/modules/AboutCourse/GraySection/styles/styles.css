@@ -41,3 +41,9 @@
     font-size: 20px;
   }
 }
+
+@media screen and (width <= 820px) {
+  .gray-section-wrapper {
+    padding: 0px 20px;
+  }
+}

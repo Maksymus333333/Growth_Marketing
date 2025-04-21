@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { JSX } from 'react';
-import { Interests } from '../../modules/AboutCourse/Interests';
+import CoworkingSearch  from '../../modules/AboutCourse/Interests';
 import './styles/styles.css';
 import { MainSection } from '../../modules/AboutCourse/MainSection';
 import { Proposition } from '../../modules/AboutCourse/Proposition';
@@ -16,7 +16,7 @@ export const LandingPage = (): JSX.Element => {
       <div className="full-width">
         <MainSection />
       </div>
-      <Interests />
+      <CoworkingSearch />
       <div className="full-width">
         <GraySection />
       </div>

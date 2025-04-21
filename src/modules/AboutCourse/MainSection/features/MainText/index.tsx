@@ -6,11 +6,12 @@ export const MainText = (): JSX.Element => {
   return (
     <div className="main-text-wrapper">
       <h1>
-        Шукаю початківців для менторства у сфері
-        <span className="second-h1"> Growth Marketing Associate</span>
+      Znajdź idealną przestrzeń
+        <span className="second-h1"> coworkingową </span>
+        w Polsce
       </h1>
       <p className="bottom-text">
-        Привіт! Я хочу допомогти тим, хто тільки починає свій шлях у сфері росту та маркетингу.
+      Elastyczne biura, kreatywne środowisko i społeczność profesjonalistów — wszystko w jednym miejscu
       </p>
     </div>
   );

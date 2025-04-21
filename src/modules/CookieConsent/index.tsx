@@ -41,20 +41,20 @@ export const CookieConsent = () => {
     <div className="cookie-consent-wrapper">
       <div className="cookie-message">
         <div className="cookie-text">
-          <h2 className="cookie-main-title">Ми використовуємо файли cookies</h2>
+          <h2 className="cookie-main-title">Używamy plików cookie</h2>
           <p className="cookie-text-description">
-            Деякі файли cookies необхідні для роботи сайту, а інші допомагають нам аналізувати трафік та персоналізувати
-            контент. Ви можете налаштувати свої вподобання або прийняти всі файли cookies.
+          Niektóre pliki cookie są niezbędne do działania strony, 
+          inne pomagają nam analizować ruch i personalizować treści. Możesz dostosować swoje preferencje lub zaakceptować wszystkie pliki cookie.
           </p>
         </div>
         <div className="cookie-buttons">
           <button className="cookie-buttons-confirm" onClick={handleAccept}>
-            Прийняти всі Cookies
+          Akceptuj
           </button>
           <button className="cookie-buttons-cancel" onClick={handleReject}>
-            Відхилити
+          Odrzuć
           </button>
-          <button className="cookie-buttons-settings">Налаштувати</button>
+          <button className="cookie-buttons-settings">Dostosu</button>
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ export const MainSection = (): JSX.Element => {
       <div className="main-section-container">
         <MainText />
         <div className="login">
-          <LogInButton />
+          <LogInButton scrollToId="coworking-search" />
         </div>
       </div>
     </section>

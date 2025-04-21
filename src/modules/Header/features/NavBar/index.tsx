@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import Menu from '../../../../assets/icons/burger_menu.svg'; // Іконки для бургер-меню
+import Menu from '../../../../assets/icons/burger_menu.svg'; 
 import '../NavBar/styles/style.css';
 
 export const NavBar = () => {
@@ -15,12 +15,18 @@ export const NavBar = () => {
       <ul className={`navbar ${isOpen ? 'open' : ''}`}>
         <li>
           <NavLink to="/" onClick={() => setIsOpen(false)}>
-            Про курс
+            About
           </NavLink>
         </li>
-        <li>Ментор</li>
-        <li>Контакти</li>
-        <li>Програма</li>
+        <li>
+        <a href="#coworking-search">Mapa</a>
+          </li>
+        <li>
+        <a href="#application-section-wrappper">Kontakt</a>
+        </li>
+        <li>
+        <a href="#proposition-section-wrapper">Zalety</a>
+        </li>
       </ul>
     </nav>
   );

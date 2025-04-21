@@ -8,7 +8,7 @@ export const Footer = (): JSX.Element => {
   return (
     <section className="footer-section-wrapper">
       <div className="footer-links">
-        {['Політика Конфіденційності', 'Умови використання', 'Політика файлів cookie', 'Авторські права'].map(
+        {['Polityka Prywatności', 'Warunki korzystania', 'Polityka plików cookie', 'Prawa autorskie'].map(
           (text) => (
             <p className="footer-text" key={text}>
               {text}
@@ -19,7 +19,7 @@ export const Footer = (): JSX.Element => {
 
       <div className="footer-info-container">
         <div className="footer-info-copirate">
-          <p>© Growth Marketing Associate 2025</p>
+          <p>© CoWorkly 2025</p>
         </div>
 
         <div className="footer-info-contact">
@@ -27,16 +27,14 @@ export const Footer = (): JSX.Element => {
             <div className="footer-input-icon">
               <img src={PhoneIcon} alt="Phone icon" />
             </div>
-            <p className="footer-text">0 800 358 497 (безкоштовно)</p>
+            <p className="footer-text">+48123456789</p>
           </div>
-
-          <p className="footer-text">+38 050 324 04 84 — Адміністратор Ірина Кабакова</p>
 
           <div className="footer-icon-text">
             <div className="footer-input-icon">
               <img src={MailIcon} alt="Mail icon" />
             </div>
-            <p className="footer-text">support@it-sprout.org.ua</p>
+            <p className="footer-text">co-workly@gmail.com</p>
           </div>
         </div>
       </div>

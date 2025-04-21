@@ -1,76 +1,171 @@
-import React from 'react';
-import AiEditSpark from '../../../assets/icons/AiEditSpark.svg';
-import BrowthAdd from '../../../assets/icons/browser-add--app-code.svg';
-import HandHeld from '../../../assets/icons/hand-held-tablet-drawing.svg';
-import GoogleMedia from '../../../assets/icons/google--media.svg';
-import WebcamVideo from '../../../assets/icons/webcam-video.svg';
-import SendEmail from '../../../assets/icons/send-email.svg';
-import StartBadge from '../../../assets/icons/star-badge.svg';
-import BrowserWebsite from '../../../assets/icons/browser-website.svg';
-import GraduationCap from '../../../assets/icons/graduation-cap.svg';
-
+import React, { useState } from "react";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import Logo from '../../../assets/icons/Union.svg';
 import './styles/styles.css';
-import { InterestItem } from './feature/InterestItem';
 
-const interestsData = [
-  {
-    iconSrc: AiEditSpark,
-    backgroundColor: 'rgba(250, 111, 53, 0.25)',
-    description: 'Цікавишся рерайтингом контенту за допомогою AI',
-  },
-  {
-    iconSrc: HandHeld,
-    backgroundColor: 'rgba(218, 80, 119, 0.25)',
-    description: 'Бажаєш навчитися створювати креативи в Canva',
-  },
-  {
-    iconSrc: BrowthAdd,
-    backgroundColor: 'rgba(132, 160, 229, 0.25)',
-    description: 'Готовий(-а) публікувати матеріали на WordPress',
-  },
-  {
-    iconSrc: GoogleMedia,
-    backgroundColor: 'rgba(255, 195, 101, 0.25)',
-    description: 'Хочеш освоїти налаштування реклами в Google Ads',
-  },
-  {
-    iconSrc: WebcamVideo,
-    backgroundColor: 'rgba(192, 130, 242, 0.25)',
-    description: "Маєш бажання створювати відео (не обов'язково, але буде плюсом)",
-  },
-  {
-    iconSrc: SendEmail,
-    backgroundColor: 'rgba(235, 146, 227, 0.25)',
-    description: 'Прагнеш навчитися створювати презентації, оформлювати email-розсилки, лід-магніти та інше',
-  },
-  {
-    iconSrc: StartBadge,
-    backgroundColor: 'rgba(111, 212, 128, 0.25)',
-    description: 'Отримуєш бонусні бали за досвід у тестуванні та звітності стратегій, креативів і цільових сторінок',
-  },
-  {
-    iconSrc: BrowserWebsite,
-    backgroundColor: 'rgba(142, 198, 237, 0.25)',
-    description: 'Впевнено володієш формулами в Google Sheets/Excel та Google Slides',
-  },
-  {
-    iconSrc: GraduationCap,
-    backgroundColor: 'rgba(147, 197, 29, 0.25)',
-    description: 'Готовий(-а) вчитися й докладати зусиль',
-  },
-];
+const coworkingLocations = {
+  warszawa: [
+    {
+      name: "WeWork Centrum",
+      lat: 52.2297,
+      lng: 21.0122,
+      image: Logo
+    },
+    {
+      name: "HubHub Warsaw",
+      lat: 52.2301,
+      lng: 21.0110,
+      image: Logo
+    }
+  ],
+  krakow: [
+    {
+      name: "Brain Embassy Kraków",
+      lat: 50.0614,
+      lng: 19.9383,
+      image: Logo
+    }
+  ],
+  wroclaw: [
+    { name: "Wrocław Creative Desk", lat: 51.1079, lng: 17.0385 , image: Logo}
+  ],
+  gdansk: [
+    { name: "Gdańsk Tech Loft", lat: 54.352, lng: 18.6466 , image: Logo }
+  ],
+  poznan: [
+    { name: "Poznań Biznes Hub", lat: 52.4064, lng: 16.9252 , image: Logo }
+  ]
+};
 
-export const Interests = () => {
+const cityCoords = {
+  warszawa: [52.2297, 21.0122],
+  krakow: [50.0647, 19.945],
+  wroclaw: [51.1079, 17.0385],
+  gdansk: [54.352, 18.6466],
+  poznan: [52.4064, 16.9252]
+};
+
+const CoworkingSearch = () => {
+  const [formData, setFormData] = useState({ city: "", date: "", spaceType: "" });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleRadioChange = (e) => {
+    setFormData({ ...formData, spaceType: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Wyszukiwanie:", formData);
+  };
+
   return (
-    <section className="interests-wrapper">
-      <div className="interests-container">
-        <h2 className="interests-title">Якщо ти:</h2>
-        <div className="interests-grid">
-          {interestsData.map((item, i) => (
-            <InterestItem key={i} iconSrc={item.iconSrc} description={item.description} backgroundColor={''} />
-          ))}
+    <section id="coworking-search">
+      <h2 className="coworking-title">Pracuj tam, gdzie chcesz</h2>
+      <form onSubmit={handleSubmit} className="coworking-form">
+        <div className="form-group">
+          <label htmlFor="city">Wybierz miasto</label>
+          <select
+            id="city"
+            name="city"
+            value={formData.city}
+            onChange={handleChange}
+          >
+            <option value="">-- Wybierz --</option>
+            <option value="warszawa">Warszawa</option>
+            <option value="krakow">Kraków</option>
+            <option value="wroclaw">Wrocław</option>
+            <option value="gdansk">Gdańsk</option>
+            <option value="poznan">Poznań</option>
+          </select>
         </div>
+
+        <div className="form-group">
+          <label htmlFor="date">Wybierz datę</label>
+          <input
+            type="date"
+            id="date"
+            name="date"
+            value={formData.date}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="form-group">
+          <label>Rodzaj przestrzeni</label>
+          <div className="radio-group">
+            <label>
+              <input
+                type="radio"
+                name="spaceType"
+                value="hot-desk"
+                checked={formData.spaceType === "hot-desk"}
+                onChange={handleRadioChange}
+              />
+              Hot desk
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="spaceType"
+                value="dedykowane-biurko"
+                checked={formData.spaceType === "dedykowane-biurko"}
+                onChange={handleRadioChange}
+              />
+              Dedykowane biurko
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="spaceType"
+                value="prywatne-biuro"
+                checked={formData.spaceType === "prywatne-biuro"}
+                onChange={handleRadioChange}
+              />
+              Prywatne biuro
+            </label>
+          </div>
+        </div>
+      </form>
+
+      {formData.city && cityCoords[formData.city] && (
+        <div className="map-container">
+          <MapContainer key={formData.city} center={cityCoords[formData.city]} zoom={13} scrollWheelZoom={false} style={{ height: "100%", width: "100%" }}>
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            {coworkingLocations[formData.city].map((spot, index) => (
+              <Marker key={index} position={[spot.lat, spot.lng]}>
+            <Popup>
+    <div style={{ maxWidth: "200px" }}>
+    <img
+      src={spot.image}
+      alt={spot.name}
+      style={{ width: "100%", borderRadius: "8px", marginBottom: "8px" }}
+    />
+    <strong>{spot.name}</strong>
+  </div>
+            </Popup>
+              </Marker>
+            ))}
+          </MapContainer>
+        </div>
+      )}
+
+      <div className="interests-section">
+        <p>
+          Odkryj przestrzenie coworkingowe, które nie tylko spełniają Twoje potrzeby zawodowe,
+          ale również inspirują do rozwoju. Niezależnie czy cenisz ciszę, kreatywne wnętrza,
+          czy możliwość nawiązywania kontaktów — znajdziesz tu coś dla siebie.
+        </p>
       </div>
     </section>
   );
 };
+
+export default CoworkingSearch;

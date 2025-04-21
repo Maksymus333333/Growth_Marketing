@@ -1,13 +1,19 @@
-.proposition-section-wrapper {
+#proposition-section-wrapper {
   display: flex;
   gap: 32px;
   padding: 130px 160px;
   justify-content: center;
-  align-items: end;
 }
-.daria-pimkina {
+.left-side {
   width: 100%;
-  height: 637px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.CoFoto {
+  width: 600px;
+  height: 401px;
+  border-radius: 20px;
 }
 
 .right-side {
@@ -48,7 +54,7 @@
 }
 
 @media screen and (width <= 1024px) {
-  .proposition-section-wrapper {
+  #proposition-section-wrapper {
     flex-direction: column;
     padding: 130px 0;
   }
@@ -65,10 +71,12 @@
   .list-item p {
     font-size: 18px;
   }
-  .daria-pimkina {
-    height: 400px;
-  }
-  .proposition-section-wrapper {
+  #proposition-section-wrapper {
     padding-top: 30px;
+  }
+  .CoFoto {
+    width: 300px;
+    height: 201px;
+    border-radius: 20px;
   }
 }

@@ -7,7 +7,7 @@ export const BackToHome = () => {
   return (
     <Link to="/" className="arrow-back-container">
       <img src={ArrowBack} alt="arrow back icon" />
-      <p className="arrow-back-text">Повернутися на Головну</p>
+      <p className="arrow-back-text">Wróć na stronę główną</p>
     </Link>
   );
 };

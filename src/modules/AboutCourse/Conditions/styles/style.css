@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
 }
-.conditions-section-wrapper {
+#conditions-section-wrapper {
   padding: 0 0px 130px;
   display: flex;
   justify-content: space-between;
@@ -65,7 +65,7 @@
 }
 
 @media (max-width: 820px) {
-  .conditions-section-wrapper {
+  #conditions-section-wrapper {
     padding: 0 0 130px;
     gap: 200px;
   }
@@ -79,7 +79,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .conditions-section-wrapper {
+  #conditions-section-wrapper {
     align-items: center;
     flex-direction: column;
     gap: 40px;

@@ -1,15 +1,15 @@
 import React from 'react';
 import './styles/styles.css';
 import ChatBubbles from '../../assets/icons/chat-two-bubbles.svg';
-import LinkedInIcon from '../../assets/icons/linkedin-icon.svg';
-import TelegramIcon from '../../assets/icons/icons_telegram.svg';
+import InstagramIcon from '../../assets/icons/instagram-iocn.svg';
+import FacebookIcon from '../../assets/icons/facebook-icon.svg';
 import { BackToHome } from './features/BackToMain';
 
 const socialLinks = [
-  { icon: LinkedInIcon, text: 'LinkedIn' },
+  { icon: InstagramIcon, text: 'Instagram' },
   {
-    icon: TelegramIcon,
-    text: ['IT - Паросток - Волонтери', 'Заходи ІТ-Паросток'],
+    icon: FacebookIcon,
+    text: ['Facebook'],
   },
 ];
 
@@ -19,14 +19,14 @@ export const ThanksForContact = () => {
       <BackToHome />
 
       <div className="thanks-title-social">
-        <h1>Дякуємо вам за зв’язок!</h1>
+        <h1>Dziękujemy za kontakt!</h1>
 
         <div className="social-column-items">
           <div className="socials-container">
             <div className="chat-bubbles-container">
               <img className="chat-bubbles-icon" src={ChatBubbles} alt="Chat icon" />
             </div>
-            <p className="social-main-text">Соцмережі</p>
+            <p className="social-main-text">Media społecznościowe</p>
           </div>
 
           <div className="socials-items-container">

@@ -7,9 +7,8 @@ export const GraySection = (): JSX.Element => {
     <section className="gray-section-wrapper">
       <div className="gray-section-container">
         <p className="gray-section-title">
-          Я РОЗРОБЛЮ ДЛЯ ТЕБЕ ПРОГРАМУ НАВЧАННЯ, ЯКА ДОПОМОЖЕ ОВОЛОДІТИ НАВИЧКАМИ
-          <span className="gray-weight-text"> GROWTH MARKETING ASSOCIATE </span>
-          ТА ЗРОБИТИ ПЕРШІ КРОКИ В ЦІЙ СФЕРІ
+        PRZESTRZENIE COWORKINGOWE TO NIE TYLKO BIURKA — 
+          <span className="gray-weight-text"> TO SPOŁECZNOŚĆ, INSPIRACJA I NOWOCZESNE UDOGODNIENIA </span>
         </p>
       </div>
     </section>

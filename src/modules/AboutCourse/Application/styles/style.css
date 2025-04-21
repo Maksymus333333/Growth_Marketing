@@ -1,4 +1,4 @@
-.application-section-wrappper {
+#application-section-wrappper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,14 +43,14 @@
 }
 
 @media (max-width: 1024px) {
-  .application-section-wrappper {
+  #application-section-wrappper {
     padding: 0;
     padding-bottom: 130px;
   }
 }
 
 @media (max-width: 820px) {
-  .application-section-wrappper {
+  #application-section-wrappper {
     padding-bottom: 130px;
   }
   .application-section-container {

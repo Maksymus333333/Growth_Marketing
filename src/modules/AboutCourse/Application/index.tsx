@@ -5,25 +5,27 @@ import { LogInButton } from '../../Shared/LogInButton';
 
 export const Application = (): JSX.Element => {
   return (
-    <section className="application-section-wrappper">
+    <section id="application-section-wrappper">
       <div className="application-section-container">
         <div className="application-main-text">
           <div className="application-h2">
-            <h2>Як подати заявку?</h2>
+            <h2>Masz pytania? Skontaktuj się z nami!</h2>
           </div>
           <div className="application-paragraph-text">
             <p>
-              Напиши мені в особисті повідомлення, розкажи коротко про себе та свій досвід (навіть якщо його немає).
+              Napisz do nas na e-mail, jeśli masz pytania.
             </p>
           </div>
         </div>
         <div>
-          <LogInButton
-            style={{
-              width: '185px',
-              height: '60px',
-            }}
-          />
+        <LogInButton
+  redirectTo="/thanks"
+  text="Napisz do nas"
+  style={{
+    width: '185px',
+    height: '60px',
+  }}
+/>
         </div>
       </div>
     </section>
